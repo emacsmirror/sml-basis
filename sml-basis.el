@@ -34,16 +34,16 @@ ENTRIES and TITLE are the index in which to look things up."
   (let ((prompt (concat "SML " title ": ")))
     (list (completing-read prompt entries nil t nil nil nil))))
 
-(defun sml-basis--browse (what entries title)
-  "Internal function to open a web browser to look up WHAT.
+(defun sml-basis--browse (which entries title)
+  "Internal function to open a web browser to look up WHICH.
 
 ENTRIES and TITLE are the index in which to look things up."
   (browse-url
    (concat sml-basis-data-base-url
-           (or (cdr (assoc what entries))
-               (if (or (null what) (equal "" what))
+           (or (cdr (assoc which entries))
+               (if (or (null which) (equal "" which))
                    (error "No %s given" title)
-                 (error "No such %s: %s" title what))))))
+                 (error "No such %s: %s" title which))))))
 
 ;;;###autoload
 (defun sml-basis-exception (which)
