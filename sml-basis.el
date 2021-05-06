@@ -45,31 +45,37 @@ ENTRIES and TITLE are the index in which to look things up."
                    (error "No %s given" title)
                  (error "No such %s: %s" title what))))))
 
+;;;###autoload
 (defun sml-basis-exception (which)
   "Look up WHICH exception in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-exceptions "exception"))
   (sml-basis--browse which sml-basis-data-exceptions "exception"))
 
+;;;###autoload
 (defun sml-basis-functor (which)
   "Look up WHICH functor in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-functors "functor"))
   (sml-basis--browse which sml-basis-data-functors "functor"))
 
+;;;###autoload
 (defun sml-basis-signature (which)
   "Look up WHICH signature in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-signatures "signature"))
   (sml-basis--browse which sml-basis-data-signatures "signature"))
 
+;;;###autoload
 (defun sml-basis-structure (which)
   "Look up WHICH structure in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-structures "structure"))
   (sml-basis--browse which sml-basis-data-structures "structure"))
 
+;;;###autoload
 (defun sml-basis-type (which)
   "Look up WHICH type in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-types "type"))
   (sml-basis--browse which sml-basis-data-types "type"))
 
+;;;###autoload
 (defun sml-basis-value (which)
   "Look up WHICH value in the Standard ML Basis Library."
   (interactive (sml-basis--read sml-basis-data-values "value"))
