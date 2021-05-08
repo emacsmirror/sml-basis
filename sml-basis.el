@@ -39,11 +39,12 @@ ENTRIES and TITLE are the index in which to look things up."
 
 ENTRIES and TITLE are the index in which to look things up."
   (browse-url
-   (concat sml-basis-data-base-url
-           (or (cdr (assoc which entries))
-               (if (or (null which) (equal "" which))
-                   (error "No %s given" title)
-                 (error "No such %s: %s" title which))))))
+   (url-encode-url
+    (concat sml-basis-data-base-url
+            (or (cdr (assoc which entries))
+                (if (or (null which) (equal "" which))
+                    (error "No %s given" title)
+                  (error "No such %s: %s" title which)))))))
 
 ;;;###autoload
 (defun sml-basis-exception (which)
