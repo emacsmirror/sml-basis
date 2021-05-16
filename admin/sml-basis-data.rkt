@@ -99,7 +99,32 @@
   (display ";;; sml-basis-data.el --- Standard ML Basis Library data ")
   (displayln "-*- lexical-binding: t -*-")
   (newline)
-  (displayln ";; Copyright 2004 AT&T and Lucent Technologies")
+  (displayln
+   ";; This document may be distributed freely over the internet as long")
+  (displayln
+   ";; as the copyright notice and license terms below are prominently")
+  (displayln
+   ";; displayed within every machine-readable copy.")
+  (newline)
+  (displayln
+   ";; Copyright © 2004 AT&T and Lucent Technologies.  All rights reserved.")
+  (newline)
+  (displayln
+   ";; Permission is granted for internet users to make one paper copy for")
+  (displayln
+   ";; their own personal use.  Further hardcopy reproduction is strictly")
+  (displayln
+   ";; prohibited.  Permission to distribute the HTML document")
+  (displayln
+   ";; electronically on any medium other than the internet must be")
+  (displayln
+   ";; requested from the copyright holders by contacting the editors.")
+  (displayln
+   ";; Printed versions of the SML Basis Manual are available from")
+  (displayln
+   ";; Cambridge University Press.  To order, please visit www.cup.org")
+  (displayln
+   ";; (North America) or www.cup.cam.ac.uk (outside North America).")
   (newline)
   (display ";; URL: ")
   (displayln sml-basis-data-base-url)
